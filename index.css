@@ -1,0 +1,72 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 5%;
+}
+
+img {
+    height: 1em;
+}
+
+.header {
+    font-size: 1.3rem;
+}
+
+.header h2 {
+    margin-bottom: 2px;
+}
+
+.grid-container {
+    display: grid;
+    grid: repeat(3, auto) / repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.email img {
+    margin-right: 10px;
+}
+
+.edu-item {
+    margin-bottom: 40px;
+}
+
+.edu-item p {
+    margin-bottom: 5px;
+}
+
+.rotate-15{
+    transform: rotate(-10deg);
+    margin-bottom: 50px;
+}
+
+.rotate-20 {
+    transform: rotate(20deg);
+    margin-bottom: 10px;
+}
+
+.rotate-17 {
+    transform: rotate(-17deg);
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem;
+    }
+    .header {
+        font-size: 0.9rem;
+    }
+    .grid-container {
+        grid: repeat(6, auto) / 1fr;
+    }
+}
